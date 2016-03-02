@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="52d30d47-0195-4c69-8b1b-9860bc6e63d7" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="JobRunnerSubmitJobWebPart.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="JobRunnerSubmitJobWebPart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fe52a956287ef5d" Namespace="JobRunnerSubmitJobWebPart.VisualWebPart1" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\JobRunnerSubmitJobWebPart\JobRunnerVariables\VisualWebPart1UserControl.ascx" />
+    <TemplateFile Location="Layouts\ModalPage.htm" />
+    <TemplateFile Location="Layouts\JScript1.js" />
+    <TemplateFile Location="ControlTemplates\JobRunnerSubmitJobWebPart\ServerFileDialog.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="JobRunnerSubmitJobWebPart_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

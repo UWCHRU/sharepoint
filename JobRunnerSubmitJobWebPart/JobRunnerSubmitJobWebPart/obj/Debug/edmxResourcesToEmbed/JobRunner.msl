@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="JobRunnerModelStoreContainer" CdmEntityContainer="JobRunnerEntities">
+    <EntitySetMapping Name="tblFileQueues">
+      <EntityTypeMapping TypeName="JobRunnerModel.tblFileQueue">
+        <MappingFragment StoreEntitySet="tblFileQueue">
+          <ScalarProperty Name="RecordId" ColumnName="RecordId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="ExecGroupId" ColumnName="ExecGroupId" />
+          <ScalarProperty Name="CmdFile" ColumnName="CmdFile" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="WorkstationId" ColumnName="WorkstationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFileQueueTests">
+      <EntityTypeMapping TypeName="JobRunnerModel.tblFileQueueTest">
+        <MappingFragment StoreEntitySet="tblFileQueueTest">
+          <ScalarProperty Name="RecordId" ColumnName="RecordId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="ExecGroupId" ColumnName="ExecGroupId" />
+          <ScalarProperty Name="CmdFile" ColumnName="CmdFile" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="WorkstationId" ColumnName="WorkstationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

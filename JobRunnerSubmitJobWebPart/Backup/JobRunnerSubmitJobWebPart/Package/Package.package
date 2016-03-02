@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="52d30d47-0195-4c69-8b1b-9860bc6e63d7" solutionId="52d30d47-0195-4c69-8b1b-9860bc6e63d7" resetWebServer="false" name="JobRunnerSubmitJobWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="1eabf866-d1a2-43b4-a104-bc3c62369ccb" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="fa00ada0-0990-4fda-907c-820bb645e29a" />
+    <projectItemReference itemId="6be2d9cd-be93-4dc8-931e-ca0ff2442820" />
+    <projectItemReference itemId="1d7f6c0c-c6ef-44ac-9235-d13508fbedd6" />
+  </projectItems>
+</package>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="My Visual WebPart Feature" Id="1eabf866-d1a2-43b4-a104-bc3c62369ccb" Scope="Site" Title="JobRunnerSubmitJobWebPart Feature1">
+  <ElementManifests>
+    <ElementManifest Location="JobRunnerVariables\Elements.xml" />
+    <ElementFile Location="JobRunnerVariables\VisualWebPart1.webpart" />
+  </ElementManifests>
+</Feature>

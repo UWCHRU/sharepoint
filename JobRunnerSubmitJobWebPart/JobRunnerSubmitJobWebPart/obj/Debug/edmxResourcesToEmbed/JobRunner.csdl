@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JobRunnerModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="JobRunnerEntities">
+    <EntitySet Name="tblFileQueues" EntityType="JobRunnerModel.tblFileQueue" />
+    <EntitySet Name="tblFileQueueTests" EntityType="JobRunnerModel.tblFileQueueTest" />
+  </EntityContainer>
+  <EntityType Name="tblFileQueue">
+    <Key>
+      <PropertyRef Name="RecordId" />
+    </Key>
+    <Property Name="RecordId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="ExecGroupId" Type="Int32" Nullable="false" />
+    <Property Name="CmdFile" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="WorkstationId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblFileQueueTest">
+    <Key>
+      <PropertyRef Name="RecordId" />
+    </Key>
+    <Property Name="RecordId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="ExecGroupId" Type="Int32" Nullable="false" />
+    <Property Name="CmdFile" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="WorkstationId" Type="Int32" />
+  </EntityType>
+</Schema>

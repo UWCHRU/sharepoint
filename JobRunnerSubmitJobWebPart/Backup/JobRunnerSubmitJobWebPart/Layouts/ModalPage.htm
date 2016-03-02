@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title>Modal Page</title>
+  <script type="text/javascript" >
+      function showDialogArgs() {
+          if (window.dialogArguments == "") {
+              alert("No image to display");
+              return false;
+          } else {
+              document.getElementById('mydiv').innerHTML =
+        "<img src='" + window.dialogArguments + "'/>";
+          }
+      }
+  </script>
+ </head>
+ <body onload="return showDialogArgs();">
+ <center>
+  <div style="background: #ff9900; width:'100%';" 
+       align="center">
+   <font color="#0000ff" size="12pt">
+	<b>Modal page</b>
+   </font>
+  </div>
+  <div id="mydiv"></div>
+  <div>
+      <table style="width:93%; height: 437px;">
+
+          <tr>
+            <td>Boo!</td>
+            <td><asp:Label id="lblCurrentDir" runat="server" Width="516px"></asp:Label></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><asp:ListBox ID="lstFiles" runat="server" Width="170px"></asp:ListBox>
+            <asp:ListBox ID="lstDirs" runat="server" Width="170px"></asp:ListBox></td>
+        <tr>
+            <td></td>
+            <td><asp:Button ID="cmdBrowsePhenotype" runat="server" Width="170px" Text="Browse"></asp:Button>
+            <asp:Button ID="cmdLoadPhenotype" runat="server" Width="170px" Text="Load XML"></asp:Button></td>
+        </tr>
+      </table>
+
+  </div>
+
+ </center>
+ </body>
+
+</html>

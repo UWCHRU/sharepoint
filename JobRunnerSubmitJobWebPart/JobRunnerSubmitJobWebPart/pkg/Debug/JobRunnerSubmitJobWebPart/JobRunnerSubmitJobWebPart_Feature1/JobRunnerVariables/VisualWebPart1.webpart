@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="JobRunnerSubmitJobWebPart.VisualWebPart1.VisualWebPart1, JobRunnerSubmitJobWebPart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fe52a956287ef5d" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">JobRunnerVariables</property>
+        <property name="Description" type="string">My Visual WebPart</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
